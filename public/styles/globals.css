@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  transition: all 0.25s ease-in-out;
+}
+
+body {
+  user-select: none;
+  overflow-x: hidden;
+  letter-spacing: 0.025rem;
+  transition: all 0.25s ease-in-out;
+}
+
+div,
+text,
+span {
+  transition: all 0.25s ease-in-out;
+}
