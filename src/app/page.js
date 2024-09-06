@@ -6,6 +6,7 @@ import Qualification from '@/components/qualification';
 import Skills from '@/components/skills';
 import Projects from '@/components/projects';
 import Contact from '@/components/contact,';
+import Footer from '@/components/footer';
 
 import { MdLocationPin, MdMap } from 'react-icons/md';
 import { FaNodeJs, FaReact } from 'react-icons/fa';
@@ -246,6 +247,19 @@ export default function Home() {
     },
   ];
 
+  const footerLinks = [
+    {
+      type: 'LinkedIn',
+      link: 'http://linkedin.com/in/abdulsaboor-in',
+      icon: <BsLinkedin color="#22a0d6" />,
+    },
+    {
+      type: 'Github',
+      link: '',
+      icon: <BsGithub color="#fff" />,
+    },
+  ];
+
   const handleButtonClick = (index) => {
     setNavBtns((prevNavBtns) =>
       prevNavBtns.map((btn, i) =>
@@ -263,6 +277,7 @@ export default function Home() {
         <Skills skills={skills} />
         <Projects projects={projects} />
         <Contact contacts={contacts} />
+        <Footer footerLinks={footerLinks} user={user} />
       </div>
     </main>
   );

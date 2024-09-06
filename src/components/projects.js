@@ -34,7 +34,7 @@ export default function Projects({ projects }) {
       <div
         className="grid gap-8 w-full"
         style={{
-          gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
         }}
       >
         {projects.map((proj, i) => (
@@ -67,7 +67,9 @@ export default function Projects({ projects }) {
                 )}
               </div>
               <div className=" absolute h-full w-full bottom-0 left-0 rounded-2xl bg-gradient-to-b from-transparent to-[#000000]  z-0"></div>
-              <h1 className="font-bold text-[#eefa4c] z-10 ">{proj.name}</h1>
+              <h1 className="font-bold text-[#eefa4c] z-10 mb-0.5">
+                {proj.name}
+              </h1>
               <div className="z-10 text-xs">
                 <span>{proj.shortDesc}</span>
                 {!seeMore[i] && proj.extendedDesc && (
