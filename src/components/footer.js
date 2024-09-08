@@ -5,7 +5,7 @@ export default function Footer({ footerLinks, user }) {
   const year = new Date().getFullYear().toString();
   return (
     <div
-      className="flex flex-col  border-t"
+      className=" flex flex-col mx-[-150px] border-t"
       style={{ boxShadow: '0 2px 13px 0px #fafa3b' }}
     >
       <div className="flex  gap-20 p-7 justify-evenly items-center px-10">
